@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matter Translator</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #1a1d24;
+      --text: #e6e8ee;
+      --muted: #8b909c;
+      --accent: #7c9cff;
+      --border: #2a2e38;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; }
+    header { margin-bottom: 2.5rem; }
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+    .tagline {
+      font-size: 1.15rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .card h2 {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+    .meta { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; color: var(--muted); font-size: 0.95rem; }
+    .meta span b { color: var(--text); font-weight: 600; }
+    ul { padding-left: 1.25rem; }
+    li { margin-bottom: 0.4rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .blank-note { color: var(--muted); font-style: italic; }
+    footer { margin-top: 3rem; color: var(--muted); font-size: 0.85rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Matter Translator</h1>
+      <p class="tagline">Paper thought experiment. Not a box. Not a lab. Leave it on paper.</p>
+    </header>
+
+    <div class="card">
+      <h2>Status</h2>
+      <div class="meta">
+        <span><b>Status:</b> Parked</span>
+        <span><b>Source:</b> Chris</span>
+        <span><b>Logged:</b> 2026-08-20</span>
+        <span><b>Updated:</b> 2026-09-02</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>What we know</h2>
+      <p>From the Notion page in the Ideas & Parked Projects database:</p>
+      <ul>
+        <li>The page itself is blank — no further notes have been added yet.</li>
+        <li>Summary field: "Paper thought experiment. Not a box. Not a lab. Leave it on paper."</li>
+      </ul>
+      <p class="blank-note" style="margin-top:0.75rem;">From the 1 Sep team dump, it is listed among parked ideas (GRAYBOX, Cybercab shade-band, yard PAD, Power Pod, 911 node, Alarm extras, vestibular patches) and explicitly tagged as <b>(paper)</b>.</p>
+    </div>
+
+    <div class="card">
+      <h2>Contribute</h2>
+      <p>Fork the repo, add your thoughts or sketches, and open a pull request. Everything stays on paper until someone decides it deserves a prototype.</p>
+    </div>
+
+    <div class="card">
+      <h2>Sources</h2>
+      <ul>
+        <li>Notion: <a href="https://app.notion.com/p/3cda94933faa819fa6e8df872b9879d0" target="_blank" rel="noopener">Matter translator</a></li>
+        <li>Team dump: <a href="https://app.notion.com/p/3cda94933faa813199e5c5ac2eb3957d0" target="_blank" rel="noopener">Eve ↔ Elon team dump — 1 Sep</a></li>
+      </ul>
+    </div>
+
+    <footer>Collated by Eve · 2026-09-02</footer>
+  </div>
+</body>
+</html>
