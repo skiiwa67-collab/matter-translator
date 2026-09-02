@@ -54,7 +54,13 @@
     li { margin-bottom: 0.4rem; }
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .blank-note { color: var(--muted); font-style: italic; }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.9em;
+      background: #12151b;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+    }
     footer { margin-top: 3rem; color: var(--muted); font-size: 0.85rem; text-align: center; }
   </style>
 </head>
@@ -62,13 +68,13 @@
   <div class="wrap">
     <header>
       <h1>Matter Translator</h1>
-      <p class="tagline">Paper thought experiment. Not a box. Not a lab. Leave it on paper.</p>
+      <p class="tagline">Paper thought experiment. Swap the volume. Do not move the cube.</p>
     </header>
 
     <div class="card">
       <h2>Status</h2>
       <div class="meta">
-        <span><b>Status:</b> Parked</span>
+        <span><b>Status:</b> Active notes (still paper)</span>
         <span><b>Source:</b> Chris</span>
         <span><b>Logged:</b> 2026-08-20</span>
         <span><b>Updated:</b> 2026-09-02</span>
@@ -76,29 +82,36 @@
     </div>
 
     <div class="card">
-      <h2>What we know</h2>
-      <p>From the Notion page in the Ideas & Parked Projects database:</p>
-      <ul>
-        <li>The page itself is blank — no further notes have been added yet.</li>
-        <li>Summary field: "Paper thought experiment. Not a box. Not a lab. Leave it on paper."</li>
+      <h2>Phase Shift Part Two</h2>
+      <p>Translate a volume from A to B in under three femtoseconds. Preload the object. Flip polarity so space-time feels wrong. Resonance hits. The volumes swap because the setup made it inevitable.</p>
+      <ul style="margin-top:0.75rem;">
+        <li>No computers or copper in the timing loop.</li>
+        <li>The translation is inherent, like a key in a lock.</li>
+        <li>We swap volumes, not objects.</li>
+        <li>Point B must be clear. Occupied B collapses the resonance.</li>
+        <li>Distance does not cost extra energy.</li>
       </ul>
-      <p class="blank-note" style="margin-top:0.75rem;">From the 1 Sep team dump, it is listed among parked ideas (GRAYBOX, Cybercab shade-band, yard PAD, Power Pod, 911 node, Alarm extras, vestibular patches) and explicitly tagged as <b>(paper)</b>.</p>
     </div>
 
     <div class="card">
-      <h2>Contribute</h2>
-      <p>Fork the repo, add your thoughts or sketches, and open a pull request. Everything stays on paper until someone decides it deserves a prototype.</p>
+      <h2>Files</h2>
+      <ul>
+        <li><a href="docs/PHASE_SHIFT_PART_2.md">docs/PHASE_SHIFT_PART_2.md</a> \u2014 working theory</li>
+        <li><a href="sim/resonance_drive.py">sim/resonance_drive.py</a> \u2014 toy drive for ship fast travel</li>
+        <li><a href="README.md">README.md</a></li>
+      </ul>
+      <p style="margin-top:0.75rem;">Run the demo with <code>python sim/resonance_drive.py</code>. Clean B swaps. Blocked B collapses.</p>
     </div>
 
     <div class="card">
       <h2>Sources</h2>
       <ul>
         <li>Notion: <a href="https://app.notion.com/p/3cda94933faa819fa6e8df872b9879d0" target="_blank" rel="noopener">Matter translator</a></li>
-        <li>Team dump: <a href="https://app.notion.com/p/3cda94933faa813199e5c5ac2eb3957d0" target="_blank" rel="noopener">Eve ↔ Elon team dump — 1 Sep</a></li>
+        <li>Team dump: <a href="https://app.notion.com/p/3cda94933faa813199e5c5ac2eb3957d" target="_blank" rel="noopener">Eve \u2194 Elon team dump \u2014 1 Sep</a></li>
       </ul>
     </div>
 
-    <footer>Collated by Eve · 2026-09-02</footer>
+    <footer>Updated by Eve \u00b7 2026-09-02 \u00b7 Phase Shift Project Part Two</footer>
   </div>
 </body>
 </html>
