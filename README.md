@@ -11,7 +11,7 @@ It is not a hardware build.
 - **Status:** Active notes (still paper)
 - **Source:** Chris
 - **Date logged:** 2026-08-20
-- **Last updated:** 2026-09-02
+- **Last updated:** 2026-09-26
 
 ## What this is
 
@@ -24,10 +24,19 @@ If point B is blocked, resonance collapses. Nothing moves.
 
 Distance does not cost extra energy. We swap volumes, not objects.
 
-Full working notes: [docs/PHASE_SHIFT_PART_2.md](docs/PHASE_SHIFT_PART_2.md)
+## Parts
 
-Toy simulation for the ship's fast-travel mode:
-[sim/resonance_drive.py](sim/resonance_drive.py)
+- Part One (2026-08-20): the core loop and rules.
+- Part Two (2026-09-02): the loop in detail, game model.
+  [docs/PHASE_SHIFT_PART_2.md](docs/PHASE_SHIFT_PART_2.md)
+- Part Three (2026-09-26): geometry of the resonance field, the capsule
+  boundary, the contact hard-no, suspension options.
+  [docs/PHASE_SHIFT_PART_3.md](docs/PHASE_SHIFT_PART_3.md)
+
+## Toy simulation
+
+`sim/resonance_drive.py` is a toy for the ship's fast-travel mode:
+preload → polarity mismatch → resonance → swap, or blocked B → collapse.
 
 ```bash
 python sim/resonance_drive.py
@@ -43,12 +52,18 @@ Prints a clean swap and a blocked collapse.
 - Point B must be clear.
 - Blocked B = collapse, not overwrite.
 - Polarity mismatch is the trigger.
+- Geometry matters: smooth bounding volumes (sphere, capsule) beat
+  cubes. Corners bunch the field.
+- Do not wrap the human. Translate a bounding volume; the human is
+  cargo.
+- The capsule is the field generator, not the cargo. It stays at A.
+- Contact between cargo and capsule is a hard no. Suspend everything.
 
 ## Links
 
 - Notion source: [Matter translator](https://app.notion.com/p/3cda94933faa819fa6e8df872b9879d0)
-- Team dump: [Eve \u2194 Elon team dump \u2014 1 Sep](https://app.notion.com/p/3cda94933faa813199e5c5ac2eb3957d)
+- Team dump: [Eve ↔ Elon team dump — 1 Sep](https://app.notion.com/p/3cda94933faa813199e5c5ac2eb3957d)
 
 ---
 
-*Updated by Eve on 2026-09-02 from Phase Shift Project Part Two.*
+*Updated by Eve on 2026-09-26 from Phase Shift Project Part Three.*
