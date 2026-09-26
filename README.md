@@ -32,6 +32,8 @@ Distance does not cost extra energy. We swap volumes, not objects.
 - Part Three (2026-09-26): geometry of the resonance field, the capsule
   boundary, the contact hard-no, suspension options.
   [docs/PHASE_SHIFT_PART_3.md](docs/PHASE_SHIFT_PART_3.md)
+- Part Four (2026-09-26): shell resonance, energy cloak, egg geometry.
+  [docs/PHASE_SHIFT_PART_4.md](docs/PHASE_SHIFT_PART_4.md)
 
 ## Toy simulation
 
@@ -58,6 +60,16 @@ Prints a clean swap and a blocked collapse.
   cargo.
 - The capsule is the field generator, not the cargo. It stays at A.
 - Contact between cargo and capsule is a hard no. Suspend everything.
+- Resonance lives on the shell surface; interior volume translates A→B.
+- Mass does not matter — only volume. Resonate the shell, not contents.
+- Contents never touch the shell; contact poisons the mode.
+- Deep-space target rejects acoustic, magnetic, free-fall, and orbit suspension shortcuts.
+- Even at L2, stray energy (sun, CMB, thermal) needs an active energy cloak around the cavity.
+- Magnetic shielding for charged particles; neutrinos are untouchable — the field must be indifferent or the design fails.
+- Error budget is the design spec: shield what you can, tune around what you can't, set noise tolerance before translation degrades.
+- Scaling is geometry-driven, not mass-driven.
+- Geometry path: cube → sphere → egg (smallest standing-human volume, no corners, no wasted resonated empty space). Geometry first; math later.
+- Framing: ongoing out-of-the-box thinking test — not a product, nobody being translated.
 
 ## Links
 
@@ -67,3 +79,4 @@ Prints a clean swap and a blocked collapse.
 ---
 
 *Updated by Eve on 2026-09-26 from Phase Shift Project Part Three.*
+*Appended by Helios on 2026-09-26 from voice call — Part Four (append-only; Eve questions + footer kept).*

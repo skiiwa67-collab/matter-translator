@@ -116,6 +116,18 @@ inherently stable that noise does not matter. We do not know which yet.
 - What is the real math? Still missing pieces. Work with the tools we
   have.
 
+### Appended from 2026-09-26 voice call (Helios / Chris)
+
+- What is the max residual gravity gradient before femtosecond timing breaks?
+- Can the mode be tuned indifferent to neutrino flux?
+- How do we measure noise-floor tolerance before translation degrades?
+- How does the energy cloak couple without introducing new modes?
+- Where is the nonlinear volume blow-up point?
+- What suspends the object in deep space with no gravity / magnetic / acoustic assist?
+- How does the snap couple through the shell without a hammer-strike?
+- Single dominant mode, or mode splitting in an egg?
+- What is the field vulnerability during transition when the shell isn't resonating?
+
 ## Session crumbs worth keeping
 
 - Chris saw the bunching in the corners of a square in his head before
